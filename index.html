@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anna's RAPLibs</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+		<!-- Our first page -->
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+				<h1>American Pie</h1>
+			</div>
+			<div data-role="main">
+				<h1 style="text-align:center">Welcome to American Pie MADLIBS!</h1>
+				<h3 style="text-align:center"> Have you ever thought to yourself - why didn't Don Mclean just add one more verse? Now is your chance :) Below you will fill out the following information in order to create the final verse of Don Mclean's classic "American Pie."</h3>
+				<form id="my-form" role="form">
+					<div class = "form-group">
+					<label for="noun">Noun</label>
+        			<input id="noun" class="form-control noun" type="text" placeholder="shoe">
+        			</div>
+					<div class = "form-group">
+					<label for="noun2">Noun</label>
+        			<input id="noun2" class="form-control noun2" type="text" placeholder="cactus">
+        			</div>
+        			</div>
+					<div class = "form-group">
+					<label for="noun3">Noun</label>
+        			<input id="noun3" class="form-control noun3" type="text" placeholder="vizsla">
+        			</div>
+					<div class = "form-group">
+					<label for="verb">Verb</label>
+        			<input id="verb" class="form-control verb" type="text" placeholder="sleep">
+        			</div>
+					<div class = "form-group">
+					<label for="verb2">Verb</label>
+        			<input id="verb2" class="form-control verb2" type="text" placeholder="love">
+        			</div>
+					<div class = "form-group">
+					<label for="verb3">Verb</label>
+        			<input id="verb3" class="form-control verb3" type="text" placeholder="argue">
+        			</div>
+					<div class = "form-group">
+					<label for="person">Famous Person</label>
+        			<input id="person" class="form-control person" type="text" placeholder="John Stamos">
+        			</div>
+					<div class = "form-group">
+					<label for="date">Date</label>
+        			<input id="date" class="form-control date" type="text" placeholder="1435">
+        			</div>
+					<div class = "form-group">
+					<label for="adjective">Adjective</label>
+        			<input id="adjective" class="form-control adjective" type="text" placeholder="fuzzy">
+        			</div>
+        			<div class = "form-group">
+					<label for="drink">Alcoholic Beverage</label>
+        			<input id="drink" class="form-control drink" type="text" placeholder="PBR">
+        			</div>
+        			<div class = "form-group">
+					<label for="drink2">Alcoholic Beverage</label>
+        			<input id="drink2" class="form-control drink2" type="text" placeholder="Boone's Farm">
+        			</div>
+        			<div class = "form-group">
+					<label for="place">Place</label>
+        			<input id="place" class="form-control place" type="text" placeholder="Hogwarts">
+        			</div>
+        			<div class = "form-group">
+					<label for="car">Car</label>
+        			<input id="car" class="form-control car" type="text" placeholder="jag">
+        			</div>
+      			</form>
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center">	
+					<button type = "submit" id="btn-click" class="btn btn-primary btn-md">See Outcome!</button>
+					<a href="#pagetwo" class="ui-btn" data-transition="turn">See Outcome</a>
+				</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- Our first page -->
+		<div data-role="page" id="pagetwo">
+			<div data-role="header">
+				<h1><span class="adjective"></span> <span class="noun2"></span></h1>
+			</div>
+			<div data-role="main">
+				<h2 style="text-align:center"> Is it a masterpiece?? </h2>
+				<p>A long long time ago<br>
+				I can still <span class="verb"></span> how<br>
+				That <span class="noun"></span> used to make me smile<br>
+				And I knew if I had my chance<br>
+				That I could make <span class="person"></span> <span class="verb2"></span><br>
+				And maybe he'd be happy for a while</p>
+
+				<p>But <span class="date"></span> made me shiver<br>
+				With every <span class="noun3"></span> I'd deliver<br>
+				Bad news on the doorstep<br>
+				I couldn't take one more step</p>
+
+				<p>I can't <span class="verb"></span> if I cried<br>
+				When I read about <span class="person"></span>'s widowed bride<br>
+				Something <span class="verb3"></span> me deep inside<br>
+				The day the <span class="noun"></span> died<br>
+				So</p>
+
+				<p>Bye, bye Miss <span class="adjective"></span> Pie<br>
+				Drove my <span class="car"></span> to <span class="place"></span> but <span class="place"></span> was dry<br>
+				And them good ole boys were drinking <span class="drink"></span> and <span class="drink2"></span><br>
+				Singin' this'll be the day that I die<br>
+				This'll be the day that I die</p>
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center">	
+					<a href="#pageone" class="ui-btn" data-transition="turn">Return to Inputs</a>
+				</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+					
+				</div>
+			</div>
+		</div>
+
+	<script src="js/app.js"></script>
+	
+</body>
+</html>
